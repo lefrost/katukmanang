@@ -1,0 +1,45 @@
+@mixin clickable {
+  transition: filter 0.2s;
+  cursor: pointer;
+  @include swish;
+
+  &:hover {
+    filter: invert(20%);
+  }
+}
+
+@mixin background {
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &.bg-left-- {
+    background-position: left;
+  }
+}
+
+@mixin swish {
+  transition-duration: 0.2s;
+}
+
+@mixin wrapper {
+  width: calc(100% - #{$wrapper-gutter} * 2);
+  max-width: $wrapper-width;
+  padding: 0 $wrapper-gutter;
+  margin: 0 auto;
+}
+
+@mixin popup {
+  @include swish;
+  display: none;
+  opacity: 0;
+  z-index: 2;
+  box-shadow: $box-shadow;
+
+  &.toggled-- {
+    display: flex;
+  }
+
+  &.visible-- {
+    opacity: 1;
+  }
+}
