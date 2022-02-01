@@ -10,7 +10,7 @@
   <div class="meta-text">
     Mini app for hosting<br />some party events. 🎉<br /><br />
     Made by
-    <a href="https://github.com/ollefrost" target="_blank"> Ryan Koroh</a><br />
+    <a href="https://github.com/ollefrost" target="_blank">Léfrost</a><br />
     for New Years' 2022. 😎<br /><br />
     <b>KATUK MANANG</b> means<br />
     "click to win" in<br />
